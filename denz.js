@@ -102,8 +102,8 @@ alasanafk = 'Nothing'
 NamaBot = settings.NamaBot
 NomorOwner = settings.NomorOwner
 NamaOwner = settings.NamaOwner
-multi = false
-nopref = true
+multi = true
+nopref = false
 
 // APIKEY
 HunterApi = settings.HunterApi
@@ -1848,7 +1848,7 @@ case 'fetch':
       if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
        if (args.length < 1) return reply(`𝙴𝙽𝚃𝙴𝚁 𝙿𝚁𝙴𝙵𝙸𝚇\nOptions :\n=> multi\n=> nopref`)
            if (c === 'multi'){
-              multi = false
+              multi = true
                     reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
                 } else if (c === 'nopref'){
                     multi = false
@@ -1856,7 +1856,7 @@ case 'fetch':
                     reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
                 } else {
                     multi = false
-                    nopref = true
+                    nopref = false
                     prefa = `${c}`
                     reply(`𝚂𝚄𝙲𝙲𝚄𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙿𝚁𝙴𝙵𝙸𝚇 𝚃𝙾 ${c}`)
                 }
