@@ -1,0 +1,43 @@
+{
+
+    "name": "Meenutty",
+
+    "description": "Meenutty - Whatsapp Bot",
+
+    "logo": "https://github.com/DEVILSER/Meenutty/raw/main/Meenutty-407x400.png",
+
+    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
+
+    "repository": "https://github.com/devil-ser/Meenutty",
+
+    "Join Our Whatsapp Support Group": "https://chat.whatsapp.com/G8RHcba0E5x3L1d9uICyK0",
+
+    "stack": "container",
+
+    "env": {
+
+        "COFFEEHOUSE_API_KEY": {
+
+            "description": "Pass This Step!",
+
+            "required": false,
+
+            "value": "true"
+
+        }
+
+    },
+
+    "addons": [{
+
+      "plan": "heroku-postgresql"
+
+    }],
+
+    "buildpacks": [{
+
+      "url": "heroku-community/apt"
+
+      }]
+
+  }
